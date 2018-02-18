@@ -1,19 +1,125 @@
-* {
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-
-h1 {
-  color: SeaGreen;
-}
-
-
-p, 
-li {
+html,body {
   font-size: 18px;
+  line-height: 1.4;
+  font-family: helvetica;
 }
 
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
 
-a {
-  text-decoration: none;
+/*Header Rules*/
+
+header {
+  background-color: cadetblue;
+  position: relative;
+  top: 1rem;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  height: 1.5rem;
+  width: auto;
+  margin: 0 1rem 0  2rem;
+}
+.company {
+  flex-grow: 2;
+}
+.desktopmenu span {
+    padding: 1rem 1rem;
+    display: inline-block;
+}
+.mobilemenu span {
+    padding: 1rem 1rem;
+    display: inline-block;
+}
+.mobilemenu {
+  display: none;
+}
+header span {
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .mobilemenu {
+    display: none;
+  }
+  .container{
+    width: 100%;
+  }
+  header {
+    top: 0;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .desktopmenu,.company {
+    display: none;
+  }
+  .mobilemenu{
+    display: inline-block;
+  }
+  header {
+    justify-content: space-between;
+    top: 0;
+  }
+  .container{
+    width: 100%;
+  }
+}
+/*Banner Rules*/
+.banner {
+  background: url(../images/glasses-bg.png);
+  background-position: center;
+  background-size: cover;
+  height: 31rem;
+  width: 100%;
+}
+.slogan {
+  background-color: white;
+  display: inline-block;
+  position: relative;
+  top: 11rem;
+  left: 2rem;
+  float: right;
+
+}
+.slogan p{
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+}
+
+@media only screen and (max-width: 425px) {
+  .banner{
+  background-position: 20%;
+  height: 17rem;
+  }
+  .slogan {
+    top: 9rem;
+    left: 0;
+    width: 100%;
+  }
+  .slogan p{
+    font-size: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+  }
+}
+@media only screen and (min-width:426px) and (max-width: 768px) {
+  .banner{
+  height: 22rem;
+  }
+  .slogan {
+    top: 6rem;
+    right: 2rem;
+    float: right;
+    width: auto;
+  }
+  .slogan p{
+    font-size: 1.33rem;
+    line-height: 1.2;
+    padding: 0.75rem 4rem;
+  }
 }
