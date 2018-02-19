@@ -1,3 +1,4 @@
+/*Universal Styles*/
 html,body {
   font-size: 18px;
   line-height: 1.4;
@@ -107,7 +108,7 @@ header span {
     text-align: center;
   }
 }
-@media only screen and (min-width:426px) and (max-width: 768px) {
+@media only screen and (min-width:426px) and (max-width: 768px),(orientation: landscape)  {
   .banner{
   height: 22rem;
   }
