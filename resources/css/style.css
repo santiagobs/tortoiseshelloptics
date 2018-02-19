@@ -42,7 +42,7 @@ header span {
   color: white;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width:768px) and (max-width:1023px){
   .mobilemenu {
     display: none;
   }
@@ -81,10 +81,16 @@ header span {
   display: inline-block;
   position: relative;
   top: 11rem;
-  left: 2rem;
-  float: right;
 
+  float: right;
 }
+@media only screen and (min-width: 1024px) {
+  .slogan {
+    left: 2rem;
+  }
+}
+
+
 .slogan p{
   font-weight: bold;
   font-size: 2rem;
@@ -108,19 +114,22 @@ header span {
     text-align: center;
   }
 }
-@media only screen and (min-width:768px) and (max-width: 1024px) {
+@media only screen and (min-width:768px) and (max-width: 1023px) {
   .banner{
   height: 22rem;
+
   }
   .slogan {
+
     top: 6rem;
     right: 2rem;
     float: right;
-    width: auto;
+
   }
   .slogan p{
     font-size: 1.33rem;
     line-height: 1.2;
     padding: 0.75rem 4rem;
+
   }
 }
