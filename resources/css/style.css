@@ -11,7 +11,6 @@ html,body {
 }
 
 /*Header Rules*/
-
 header {
   background-color: cadetblue;
   position: relative;
@@ -81,7 +80,6 @@ header span {
   display: inline-block;
   position: relative;
   top: 11rem;
-
   float: right;
 }
 @media only screen and (min-width: 1024px) {
@@ -89,8 +87,6 @@ header span {
     left: 2rem;
   }
 }
-
-
 .slogan p{
   font-weight: bold;
   font-size: 2rem;
@@ -117,19 +113,112 @@ header span {
 @media only screen and (min-width:768px) and (max-width: 1023px) {
   .banner{
   height: 22rem;
-
   }
   .slogan {
-
     top: 6rem;
     right: 2rem;
     float: right;
-
   }
   .slogan p{
     font-size: 1.33rem;
     line-height: 1.2;
     padding: 0.75rem 4rem;
-
   }
+}
+/*Features Rules*/
+.features {
+  display: flex;
+  justify-content: center;
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  height: 8rem;
+  width: 5rem;
+  margin: 3rem;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.paper {
+  width: 3.5rem;
+}
+.ruler,.truck {
+  width: 5rem;
+  height: auto;
+}
+@media only screen and (max-width: 767px) {
+  .features {
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+  }
+  .feature {
+  margin: 0.77rem 0;
+  height: auto;
+  }
+  .feature p {
+    font-size: 0.77rem;
+    padding-top: 1rem;
+  }
+}
+/*Company Information Rules*/
+.info h5 {
+  font-weight: bold;
+  background-color: cadetblue;
+  color: white;
+  width: 10rem;
+  padding: 0.5rem 1.25rem;
+}
+.information {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.info {
+  width: 35%;
+  margin: 0 2.5%
+}
+@media only screen and (max-width: 767px) {
+  .information {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  .info {
+    width: 100%;
+    margin: 0;
+  }
+  .info h5 {
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+  .info p {
+    font-size: 0.77rem;
+    margin: 1rem 0 4rem 0;
+  }
+}
+/*Footer Information Rules*/
+footer {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer img {
+  height: 1.5rem;
+  width: auto;
+  padding: 4rem 1rem 4rem 4rem;
+}
+footer span {
+  flex-grow: 2;
+}
+@media only screen and (max-width: 767px) {
+  .copyright{
+    display: none;
+  }
+  footer img {
+    padding: 4rem 0;
+  }
+
 }
